@@ -45,3 +45,74 @@ alert(user[info]);
 
 let admin= String(prompt('Введите ваше имя'));
  alert(`Привет, ${admin} !`);
+
+ let password = prompt('Введите пароль');
+ if (password === 'домашка') {
+    alert('Пароль введен верно')
+ } else{
+    alert('Пароль введен неправильно')
+ }
+
+ let c = prompt('Введите число от 0 до 10');
+ if(c > 0 && c < 10) {
+ console.log("утверждение верно")
+} else{
+   console.log('утверждение неверно')
+}
+
+let d = 10;
+let e = 120;
+if (d>100 || e>100) {
+   alert('верно')
+} else {
+   alert('неверно')
+}
+
+let a = Number ('2');
+let b = Number ('3');
+alert(a + b);
+
+
+let monthNumber = prompt('напишите меесяц')
+
+monthNumber = monthNumber.toLocaleLowerCase();
+
+switch (monthNumber) {
+   case 'январь' : 
+      alert('зима');
+      break;
+   case 'февраль':
+      alert('зима');
+      break;   
+   case 'март':
+      alert('весна');
+      break;   
+   case 'апрель':
+      alert('весна');
+      break;   
+   case 'май':
+      alert('весна');
+      break;   
+   case 'июнь':
+      alert('лето');
+      break;   
+   case 'июль':
+      alert('лето');
+      break;   
+   case 'август':
+      alert('лето');
+      break;   
+   case 'сентябрь':
+      alert('осень');
+      break;   
+   case 'октябрь':
+      alert('осень');
+      break;   
+   case 'ноябрь':
+      alert('осень');
+      break;   
+   case 'декабрь':
+      alert('зима');
+      break;
+   default: alert('Такого месяца нету)')
+}
