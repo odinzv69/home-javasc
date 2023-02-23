@@ -1,4 +1,4 @@
-let a = 20;
+/*let a = 20;
 alert(a);
 
 let firstIphone = 2007;
@@ -44,7 +44,7 @@ let info = prompt('Какую информацию хотите узнать о 
 alert(user[info]);
 
 let admin= String(prompt('Введите ваше имя'));
- alert(`Привет, ${admin} !`);
+ alert(`Привет, ${admin} !`);*/
 
  let password = prompt('Введите пароль');
  if (password === 'домашка') {
@@ -116,3 +116,25 @@ switch (monthNumber) {
       break;
    default: alert('Такого месяца нету)')
 }
+ let g = 2
+ let scin = prompt ('Пожалуйста, введите любое число')
+ let t = scin%g
+ if (t === 0) {
+   alert('число четное')
+ } 
+ else {
+   alert('число нечетно')
+ }
+
+ let clientOS = prompt('здравствуйте, если вы пользуетесль ОС IOS то нажмите 0, если же вы пользуетесь Android то нажмите 1')
+
+ if(
+   clientOS === null ||
+   clientOS === ''   ||
+   clientOS > 1 ||
+   clientOS < 0 ||
+   (clientOS > 0 && clientOS < 1) ||
+   isNaN (clientOS)){
+      alert('Ощибка');
+   } else + clientOS==1   ? alert ('Установите программу для Android по Ссылке') :
+                            alert (' Установите программу на IOS по Ссылке')
